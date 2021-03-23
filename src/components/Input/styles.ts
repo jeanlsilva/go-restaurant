@@ -1,6 +1,18 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+interface ContainerProps {
+  isFocused: boolean;
+  isFilled: boolean;
+}
+
+interface IconProps {
+  name: string;
+  size: number;
+}
+
+export const Icon = styled.img<IconProps>``;
+
+export const Container = styled.div<ContainerProps>`
   display: flex;
   align-items: center;
 
